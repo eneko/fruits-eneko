@@ -1,5 +1,5 @@
 # fruits-eneko
-This is my personal Xcode theme, based in Fruits and improved over the years using it.
+This is my personal Xcode theme, based in [Fruits](https://github.com/muukii/xcode-fruits) and improved over the years using it.
 
 ### Features
 - ✅ Differentiate between classes and other type definitions.
