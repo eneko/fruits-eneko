@@ -1,0 +1,96 @@
+/**
+ * Syntax highlighting styles
+ */
+
+//$code-background: #1C1F26;
+$code-background: #282C34;
+
+$plain-text: #EFEDED;
+$comments: #8C94A5;
+$documentation: #60997E;
+$documentation-keywords: #60997E;
+$strings: #CCBC58;
+$characters: #CCBC58;
+$numbers: #FFBC66;
+$keywords: #E34257;
+$preprocessor: #CCBC58;
+$urls: #E34257;
+$attributes: #7D7094;
+$class-names: #6D95C5;
+$function-names: #7D7094;
+$constants: #7D7094;
+$type-names: #A268BC;
+$instances: #7D7094;
+
+.highlight {
+    background: #fff;
+    @extend %vertical-rhythm;
+
+    .highlighter-rouge & {
+      color: $plain-text;
+    }
+
+    pre {
+      background: $code-background;
+    }
+
+    .c     { color: $comments; font-style: italic } // Comment
+    .err   { color: #a61717; background-color: #e3d2d2 } // Error
+    .k     { color: $keywords } // Keyword
+    .o     { color: $plain-text; font-weight: bold } // Operator
+    .cm    { color: $comments; font-style: italic } // Comment.Multiline
+    .cp    { color: $preprocessor; font-weight: bold } // Comment.Preproc
+    .c1    { color: $comments; font-style: italic } // Comment.Single
+    .cs    { color: $documentation; font-weight: bold; font-style: italic } // Comment.Special
+    .gd    { color: #000; background-color: #fdd } // Generic.Deleted
+    .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
+    .ge    { font-style: italic } // Generic.Emph
+    .gr    { color: #a00 } // Generic.Error
+    .gh    { color: $documentation } // Generic.Heading
+    .gi    { color: #000; background-color: #dfd } // Generic.Inserted
+    .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
+    .go    { color: #999 } // Generic.Output
+    .gp    { color: $plain-text } // Generic.Prompt
+    .gs    { color: #fff; font-weight: bold } // Generic.Strong
+    .gu    { color: $documentation-keywords } // Generic.Subheading
+    .gt    { color: #a00 } // Generic.Traceback
+    .kc    { color: $keywords } // Keyword.Constant
+    .kd    { color: $keywords } // Keyword.Declaration
+    .kp    { color: $keywords; font-weight: bold } // Keyword.Pseudo
+    .kr    { color: $keywords; font-weight: bold } // Keyword.Reserved
+    .kt    { color: $type-names } // Keyword.Type
+    .m     { color: $numbers } // Literal.Number
+    .s     { color: $strings } // Literal.String
+    .na    { color: $instances } // Name.Attribute
+    .nb    { color: $type-names } // Name.Builtin
+    .nc    { color: $class-names } // Name.Class
+    .no    { color: $constants } // Name.Constant
+    .ni    { color: $instances } // Name.Entity
+    .ne    { color: $function-names } // Name.Exception
+    .nf    { color: $function-names } // Name.Function
+    .nn    { color: $type-names } // Name.Namespace
+    .nt    { color: #fff } // Name.Tag
+    .nv    { color: $instances } // Name.Variable
+    .ow    { color: $plain-text; font-weight: bold } // Operator.Word
+    .w     { color: $plain-text } // Text.Whitespace
+    .mf    { color: $numbers } // Literal.Number.Float
+    .mh    { color: $numbers } // Literal.Number.Hex
+    .mi    { color: $numbers } // Literal.Number.Integer
+    .mo    { color: $numbers } // Literal.Number.Oct
+    .sb    { color: $strings } // Literal.String.Backtick
+    .sc    { color: $strings } // Literal.String.Char
+    .sd    { color: $strings } // Literal.String.Doc
+    .s2    { color: $strings } // Literal.String.Double
+    .se    { color: $strings } // Literal.String.Escape
+    .sh    { color: $strings } // Literal.String.Heredoc
+    .si    { color: $strings } // Literal.String.Interpol
+    .sx    { color: $strings } // Literal.String.Other
+    .sr    { color: $numbers } // Literal.String.Regex
+    .s1    { color: $characters } // Literal.String.Single
+    .ss    { color: $strings } // Literal.String.Symbol
+    .bp    { color: $numbers } // Name.Builtin.Pseudo
+    .vc    { color: $class-names } // Name.Variable.Class
+    .vg    { color: $constants } // Name.Variable.Global
+    .vi    { color: $instances } // Name.Variable.Instance
+    .il    { color: $numbers } // Literal.Number.Integer.Long
+}
